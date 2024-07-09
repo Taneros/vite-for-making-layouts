@@ -1,3 +1,40 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+//if button-purple and button-white have the same font,
+//weight could i apply it to class button?
+.button {
+  border-radius: 18px;
+  padding: 18px 27px;
+
+  &--purple {
+    flex-grow: 0;
+    color: $light-grey;
+    background-color: $brand-color;
+    border: 1px solid transparent;
+    transition: all 0.3s linear;
+  }
+  &--purple:hover {
+    color: #6c5fbc;
+    border-color: #6c5fbc;
+    background-color: #ffffff;
+  }
+
+  &__text {
+    font-family: $text-font-stack;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &--login {
+    color: $mid-grey;
+    background-color: transparent;
+    border: none;
+  }
+  &--white {
+    color: $brand-color;
+    background-color: white;
+    border: 1px solid $brand-color;
+    transition: all 0.3s linear;
+  }
+}
